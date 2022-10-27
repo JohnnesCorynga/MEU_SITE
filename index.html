@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
 </head>
-<body id="body-principal" class="navbar-dark bg-dark">
+<body id="body-principal" class="navbar-dark">
     <a name="home"></a>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
@@ -89,57 +89,79 @@
     <main>
         <a name="quem-somos"></a>
             <section class="secao-texto">
-                <h2>QUEM SOMOS?</h2>
+                <h1>QUEM SOMOS?</h1>
                 <article>
-                    <h2>FORMAÇÃO ACADÊMICA</h2>
-                    <h4>Programação</h4>
+                    <section>
+                        <h2>Sobre Mim</h2>
                         <hr>
-                        <p>&spades; <strong>Desenvolvedor Front-End HTML, CSS && JavaScript</strong></p>
-                        <p>&spades; <strong>Desenvolvedor Back-End PHP, Banco de Dados - MySQL && Python</strong></p>
-                        <p>&spades; Soft Engineer certificado pelo curso de formação <strong>Full-Stack</strong>
-                        <a class="link" href="https://programadorlifestyle.com.br/inscricao-promocional/" target="_blank">Programador LifeStyle</a></p>
-                    <h4>Administração</h4>
+                            <p>&spades;Sou apaixonado por tudo que faço, aprendo rápido, organização é uma prioridade, foco em resultados, trabalho bem em equipe, e estou sempre procurando formas de resolver problemas.  Estou sempre em busca de soluções e aprendendo coisas novas.</p>
+                    </section>
+                    <section>
+                        <h2>Formação Acadêmica</h2>
                         <hr>
-                        <p>&spades; Bacharel em Administração</p>
-                        <p>&spades; Especialista em Gestão Pública certificado pela
-                            <a class="link" href="https://www.unopar.com.br/inscricao?gclsrc=aw.ds&msclkid=ee7a33affcb914914b4b5185ca50fd9f&utm_source=bing&utm_medium=cpc&utm_campaign=Unopar%20EAD%20%3A%20L1%20%3A%20Search%20%3A%20Institucional%20%3A%20PIM&utm_term=Unopar&utm_content=Unopar%20Institucional" target="_blank" rel="external">UNOPAR</a></p>
-                        <p>&spades; Perito Judicial certificado por
-                            <a class="link" href="https://academiadoperito.com.br/" target="_blank" rel="external">Academia do Perito</a href></p>
-                        <p>&spades; Mediador/Conciliador do
-                            <a class="link" href="https://www.tribunaldoconsumidor.com.br/o-tdc" target="_blank" rel="external">TDC - Tribunal Do Consumidor</a href></p>
-
-
-                    <!--ANTIGO FEITO A MÃO
-                <picture>
-                    <source media="(max-width: 400px)" srcset="imagens-videos-audios/dev=250.png" type="image/png">
-                    <source media="(max-width: 700px)" srcset="imagens-videos-audios/dev=450.png" type="image/png">
-                    <img src="imagens-videos-audios/dev=650.png" alt="Imagem desenvolvedor">
-                </picture>
-                <h2>Nossos Serviços Tecnológicos</h2>
-                    <p><b>@</b> Ánalises de contratos: Privados e Públicos;</p>
-                    <p><b>@</b> Ánalises de contratos licitatórios;</p>
-                    <p><b>@</b> Contratos Bancários;</p>
-                    <p><b>@</b> Ánalises de BP, DRE, DFC;</p>
-                    <p><b>@</b> Mediação e Conciliação Extra Judicial para p. Fisicas e Juridicas;</p>
+                        <h4>Programação Full-Stack</h4>
+                            <p>&spades; Desenvolvedor Front-End: <strong>HTML, CSS, Bootstrap, React && JavaScript</strong></p>
+                            <p>&spades; Desenvolvedor Back-End: <strong>PHP, Banco de Dados - MySQL</strong></p>
+                            <p>&spades; Conhecimentos adicionais em: <strong>Figma, Git/GitHub, WordPress, nodeJs, typeScript</strong></p>
+                            <p>&spades; Soft Engineer certificado pelo curso de formação <strong>Full-Stack </strong><a class="link" href="https://programadorlifestyle.com.br/inscricao-promocional/" target="_blank">Programador LifeStyle</a></p>
+                            <p>&spades; Front-End Developer certificado pelo curso de formação<strong> Gustavo Guanabara - Curso em Video</strong></p>
+                            <p>&spades;Developer Web certificado pelo curso de formação<strong> CapGemini</strong></p>
+                            
+                        <h4>Administração</h4>
+                            <p>&spades; Bacharel em Administração</p>
+                            <p>&spades; Especialista em Gestão Pública certificado pela
+                                <a class="link" href="https://www.unopar.com.br/inscricao?gclsrc=aw.ds&msclkid=ee7a33affcb914914b4b5185ca50fd9f&utm_source=bing&utm_medium=cpc&utm_campaign=Unopar%20EAD%20%3A%20L1%20%3A%20Search%20%3A%20Institucional%20%3A%20PIM&utm_term=Unopar&utm_content=Unopar%20Institucional" target="_blank" rel="external">UNOPAR</a></p>
+                            <p>&spades; Perito Judicial certificado por
+                                <a class="link" href="https://academiadoperito.com.br/" target="_blank" rel="external">Academia do Perito</a href></p>
+                            <p>&spades; Mediador/Conciliador do
+                                <a class="link" href="https://www.tribunaldoconsumidor.com.br/o-tdc" target="_blank" rel="external">TDC - Tribunal Do Consumidor</a href></p>
+                    </section>
+                    <section class="secao-centro">
+                        <h2>Minhas Experiências</h2>
+                        <hr>
+                            <h4>Meus Projetos</h4>
+                            <article>
+                                <h5 onclick="mostrar('cbd')">&spades; <strong>Crud Banco de Dados</strong></h5>
+                                <p class="hidden" id="cbd">Projeto completo contendo Crud de conteiner, Crud de movimentação e um Relatório final com as tecnologias Front-End: Figma, Css, Html, BootStrap e JavaScript && Php, JavaScript e Mysql no Back. Projeto completo com gravação para o <a target="_blank" href="https://www.youtube.com/watch?v=AShUIIienRM">Youtube</a> e versionamento do <a target="_blank" href="https://github.com/JohnnesCorynga/PROJETO_CRUD_CONTEINER">Código</a> no meu Git/GitHub.</p>
+                            </article>
+                            <article>
+                                <h5 onclick="mostrar('spop')">&spades; <strong>Site Profissional(Opto Visão)</strong></h5>
+                                <p class="hidden" id="spop">Fiz um Site completo ultilizando apenas Figma, Html5, Css3, BootStrap e JavaScript. Projeto muito relevante, com muito aprendizado, e entregue no para o para o cliente.
+                                </p>
+                            </article>
+                            <article>
+                                <h5 onclick="mostrar('spp')">&spades; <strong>Site Pessoal(Portifólio)</strong></h5>
+                                <p class="hidden" id="spp">Fiz <strong>Este</strong> completo ultilizando apenas Figma, Html5, Css3, BootStrap e JavaScript. Projeto muito relevante, com muito aprendizado, mostrando todo meus conhecimentos, alguns projetos e técnicas.
+                                </p>
+                            </article>
+                            <article>
+                                <h5 onclick="mostrar('dspl')">&spades; <strong>Desafio SpaceX PL</strong></h5>
+                                <p class="hidden" id="dspl">Projeto completo  no curso de programação Programador LifeStyle-PL. Projeto que requeria dados provenientes de formularios com várias validações e personalização utilizando das tecnologias Figma, BootStrap, Html, Css & JavaScript para validações.
+                                </p>
+                            </article>
+                    </section>
+                    <section class="secao-centro">
+                        <h4>Ferramentas e Tecnologias</h4>
+                            <div style="display: inline_block"><br>
+                                <img alt="Eros-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                                <img alt="Eros-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+                                <img alt="Eros-Php" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+                                <img  alt="Eros-MySQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" />
+                                <img alt="Eros-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                <img alt="Eros-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                            </div><br>
+                        <h4>Conhecimentos Adicionais em:</h4>
+                            <div style="display: inline_block"><br>
+                                <img alt="Eros-Git" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" />
+                                <img alt="Eros-GitHub" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" />
+                                <img alt="Eros-Figma" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" />
+                                <img alt="Eros-Botstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" />
+                                <img alt="Eros-Wordpress" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-original.svg" />
+                                <img alt="Eros-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+                                <img alt="Eros-Nodejs" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" />
+                            </div>
+                    </section>
                     
-                    
-                <picture >
-                    <source media="(max-width: 400px)" srcset="imagens-videos-audios/acordo=250.png" type="image/png">
-                    <source media="(max-width: 700px)" srcset="imagens-videos-audios/acordo=450.png" type="image/png">
-                    <img src="imagens-videos-audios/acordo=650.png" alt="Imagem Acordo">
-                </picture>
-                <h2>Nossos Serviços Administrativos</h2>
-                    <p><b>@</b><a class="link" href="FormulariodeDeclaraçãodoImposto.html" target="_blank" rel="external"> @ Declaração de imposto de Renda;</a></p>
-                    <p><b>@</b> Ánalises de contratos: Privados e Públicos;</p>
-                    <p><b>@</b> Ánalises de contratos licitatórios;</p>
-                    <p><b>@</b> Ánalises de BP, DRE, DFC;</p>
-                    <p><b>@</b> Mediação e Conciliação Extra Judicial para p. Fisicas e Juridicas;</p>
-                    <p><b>@</b> Documentação: Centralizando informações e emitindo relatórios;</p>
-                    <p><b>@</b> Apoio: Intermediando ações entre os envolvidos;</p>
-                </article>
-                    -->
-
-
                     <!--
                       --- FEITO VIA BOOSTRAP
                       --- Escondendo a div de acordo com a resolução do site
@@ -187,6 +209,7 @@
                             <div class="card-img-overlay">
                                 <h2 class="card-title">Nossos Serviços Administrativos</h2>
                                     <ol class="card-text">
+                                        <li><b>@</b><a class="link" href="FormulariodeDeclaraçãodoImposto.html" target="_blank" rel="external"> Declaração de Imposto de Renda;</a></li>
                                         <li><b>@</b> Ánalises de contratos: Privados e Públicos;</li>
                                         <li><b>@</b> Ánalises de contratos licitatórios;</li>
                                         <li><b>@</b> Contratos Bancários;</li>
@@ -204,7 +227,7 @@
                             <div class="card-body">
                                 <h2 class="card-title">Nossos Serviços Administrativos</h2>
                                     <ol class="card-text">
-                                        <li><b>@</b><a class="link" href="FormulariodeDeclaraçãodoImposto.html" target="_blank" rel="external">Declaração de imposto de Renda;</a></li>
+                                        <li><b>@</b><a class="link" href="FormulariodeDeclaraçãodoImposto.html" target="_blank" rel="external"> Declaração de Imposto de Renda;</a></li>
                                         <li><b>@</b> Ánalises de contratos: Privados e Públicos;</li>
                                         <li><b>@</b> Ánalises de contratos licitatórios;</li>
                                         <li><b>@</b> Contratos Bancários;</li>
@@ -216,6 +239,7 @@
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
+                </article>
                       <!--De acordo com a resolução da tela-->
         </section>
         <a name="aprender-mais"></a>
@@ -277,7 +301,7 @@
                         </div>
                 </li>
                 <li>
-                    <input type="button" value="Demonstração de Resultados (DRE)" onclick="mostrar('dre')">
+                    <input type="button" value="DRE" onclick="mostrar('dre')">
                         <div class="hidden" id="dre">
                             <p>&nbsp; A Demonstração de Resultados tem como objetivo mostrar como o resultado líquido do exercício foi formado. Isso é feito por meio do confrontamento das receitas, custos e despesas. Esse documento apresenta um resumo de todos os resultados operacionais em um determinado período e pode ser utilizado como um indicador para auxiliar nas decisões da companhia no âmbito financeiro. Um detalhe: hoje a DRE é mais conhecida apenas como DR.</p>
                         </div>
@@ -321,7 +345,7 @@
                                 <img class="imagem-rede-social" src="incones-logos-oficiais/github-ico-sem-cor.png" alt="Logo do GitHub"></a>
                         </abbr>
                         <abbr title="Linkedim">
-                            <a href="http://www.linkedin.com/in/eros-ravier-silva-arag%C3%A3o-511526196/" target="_blank">
+                            <a href="http://www.linkedin.com/in/eros-ravier-silva-aragao-511526196/" target="_blank">
                                 <img class="imagem-rede-social" src="incones-logos-oficiais/linkedin-ico-sem-cor.png" alt="Logo do Linkedin"></a>
                         </abbr>
                         <abbr title="Vagas Thor">
@@ -348,7 +372,7 @@
           <li>
               <abbr title="WhatsApp">
                   <a class="link" href="http://wa.me/+5586981042760?text=Olá,%20Eros, poderia%20me%20ajudar" target="_blank">
-                      <img class="imagem_contato" src="incones-logos-oficiais/whatsapp-ico-sem-cor.png" alt="Logo do WhatsaApp">(86) 9 9852-1856</a>
+                      <img class="imagem_contato" src="incones-logos-oficiais/whatsapp-ico-sem-cor.png" alt="Logo do WhatsaApp">+55 86 9 9852-1856</a>
               </abbr>
           </li>
           <li>

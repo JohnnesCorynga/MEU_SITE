@@ -6,13 +6,17 @@
     font-weight: normal;
 }
 :root{
+    /* 
+        --cor2:#00a896ff;
+        --cor3:#02c39aff;
+    */
     --cor0:#0429feff;
     --cor1:#0D6EFDff;
-    --cor2:#00a896ff;
-    --cor3:#02c39aff;
+    --cor2:#212B46;
+    --cor3:#2e2e2e;
     --cor4:#f0f3bdff;
     --cor5:#ff4b0aff;
-
+  
     --font-padrão: 'Roboto' , verdana, Helvetica, sans-serif;
     --font-especial:'Fredericka the Great', cursive; /*'Perfect', cursive;*/
     --font-titulos:'Edu SA Beginner', cursive;
@@ -22,14 +26,24 @@
     margin: 0px;
     padding: 0px;
 }
+@keyframes girando {
+    from{
+        transform: rotateY(90deg);
+    }to{
+        transform: rotateY(0deg);
+    }
+    
+}
 .eragonTech{
     font-size: 25px;
     display: flexbox;
+    animation: girando 2s;
 }
 .eragonTech::first-letter{
     color: var(--cor5);
 }
 body{
+    background-color: var(--cor2);
     color:  black;
     font: normal 18px var(--font-padrão);
     text-align: center;
@@ -49,12 +63,12 @@ body{
 }
 
 header{
-    box-shadow: 0px 1px 7px rgba(0,0,0,0.400);
+    /*box-shadow: 0px 1px 7px rgba(0,0,0,0.400);*/
     max-height: 370px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.535);
     color: var(--cor4);
     padding: 25px;
-    background-image: linear-gradient(to top,#121212,#212b46);
+    background-image: linear-gradient(to top,#212b46, var(--cor0));
 }
 .esquerda{
     padding-top: 50px; ;
@@ -67,6 +81,7 @@ header{
 .logo-eragon{
     margin-top: 15px;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.95);
+    animation: girando 2s;
 }
 .card{
     margin-top: 100px;
@@ -92,34 +107,42 @@ header{
 }
 article{
     max-width: 650px;
-    padding: 20px;
+    padding: 10px;
     /*box-shadow: 2px 1px 5px rgba(30, 29, 29, 0.535);*/
     border-radius: 15px;
     text-align: justify;
     margin: auto;
-    /*background-image: linear-gradient(to top,var(--cor0) ,var(--cor3),var(--cor0));*/
-    
-
 }
 main{
     padding-top: 215px;
     padding-bottom: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.494);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.494);
     margin: auto;
     min-width: 280px;
     max-width: 900px;
-    background-color: white;
+    background-color: var(--cor4);
     border-bottom-right-radius:  15px;
     border-bottom-left-radius:  15px;
 }
 h1{
     font: bolder 35px var(--font-especial);
 }
-h2,h4{
+h2{
     font-family: var(--font-especial);
 }
 h3{
     font:var(--font-titulos);
+}
+h4{
+    font-weight: bold;
+}
+h5{
+    padding: 5px;
+    text-align: center;
+}
+h5:hover{
+    background-color: var(--cor1);
+    cursor: pointer;
 }
 img{
     border-radius: 25px;
@@ -127,6 +150,16 @@ img{
 .siga-nos{
     justify-content: center;
     display: flex;
+}
+article>section>h2{
+    background-color: var(--cor2);
+    color: white;
+}
+.secao-centro{
+    display:block;
+    margin:auto;
+    justify-content: center;
+    text-align: center;
 }
 /*DIV ESCONDIDA*/
 .hidden{
@@ -148,17 +181,21 @@ aside{
     margin-top: 50px;
 }
 aside>li>input{
-
     margin: 5px;
     max-width: 280px;
     min-width: 280px;
     padding: 3px 5px;
-    background-color:var(--cor4);
-    color:  var(--cor1);
-    font-size: 20px;
+    background-color:var(--cor2);
+    color:white;
+    font-size: 1em;
     border-radius: 10px;
     border: 1px solid black;
     cursor: pointer;
+
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    background-color: var(--cor3);
 
 }
 li {
@@ -195,7 +232,7 @@ li {
 footer{
     margin-top: 50px;
     justify-content: center;
-    background-color: black;
+    background-color: var(--cor3);
     color: white;
     font-style: italic ;
 }
