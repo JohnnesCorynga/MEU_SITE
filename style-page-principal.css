@@ -68,7 +68,7 @@ header{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.535);
     color: var(--cor4);
     padding: 25px;
-    background-image: linear-gradient(to top,#212b46, var(--cor0));
+    background-image: linear-gradient(to top,var(--cor2), var(--cor0));
 }
 .esquerda{
     padding-top: 50px; ;
@@ -139,10 +139,12 @@ h4{
 h5{
     padding: 5px;
     text-align: center;
+    border-radius: 15px;
 }
 h5:hover{
-    background-color: var(--cor1);
+    background-image: linear-gradient(to right, #00a896ff,#212B46);
     cursor: pointer;
+    transition: .5s;
 }
 img{
     border-radius: 25px;
@@ -154,6 +156,8 @@ img{
 article>section>h2{
     background-color: var(--cor2);
     color: white;
+    padding: 10px;
+    border-radius: 15px;
 }
 .secao-centro{
     display:block;
@@ -162,7 +166,7 @@ article>section>h2{
     text-align: center;
 }
 /*DIV ESCONDIDA*/
-.hidden{
+.hidden,.hiddenProj{
     max-width: 650px;
     display: none;
     margin:auto;
@@ -171,6 +175,27 @@ article>section>h2{
     align-items: center;
     justify-content: center;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.535);
+}
+.secao-centro>article{
+    max-width: 500px;
+    font-size: 30px;
+}
+.secao-centro>article>p{
+    background-image: linear-gradient(to left, #00a896ff,#212B46);
+    color: azure;
+}
+
+.hiddenProj{
+    animation: fly 1s linear forwards;
+}
+@keyframes fly {
+    0%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
 }
 p{
     text-align: justify;
@@ -191,7 +216,6 @@ aside>li>input{
     border-radius: 10px;
     border: 1px solid black;
     cursor: pointer;
-
 }
 input[type="button"]:hover{
     cursor: pointer;
