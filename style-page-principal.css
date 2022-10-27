@@ -54,7 +54,7 @@ header{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.535);
     color: var(--cor4);
     padding: 25px;
-    background-image: linear-gradient(to top,#0429feff ,black);
+    background-image: linear-gradient(to top,#121212,#212b46);
 }
 .esquerda{
     padding-top: 50px; ;
