@@ -178,7 +178,7 @@ article>section>h2{
 }
 .secao-centro>article{
     max-width: 500px;
-    font-size: 30px;
+    font-size: 1em;
 }
 .secao-centro>article>p{
     background-image: linear-gradient(to left, #00a896ff,#212B46);
