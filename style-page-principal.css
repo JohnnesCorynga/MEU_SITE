@@ -195,13 +195,7 @@ article>section>h2{
     padding: 10px;
     border-radius: 15px;
 }
-.secao-centro{
-    display:block;
-    margin:auto;
-    margin-top: 50px;
-    justify-content: center;
-    text-align: center;
-}
+
 .card-text{
     font-size: .7em;
 }
@@ -222,6 +216,13 @@ article>section>h2{
 strong{
     color: var(--cor0);
 }
+.secao-centro{
+    display:block;
+    margin:auto;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
 .secao-centro>article{
     max-width: 800px;
     font-size: 1em;
@@ -231,6 +232,35 @@ strong{
     color: azure;
     padding: 20px;
 }
+/*Icones de Ferramentas e Tecnologias*/
+.secao-centro>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.img_icone{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin-right: 30px;
+}
+.img_icone>img{
+    opacity: .65;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.img_icone>img:hover{
+    opacity: 1.8;
+    width: 80px;
+    height: 100px;
+    border-radius: 10px;
+    transition:.4s;
+    cursor: pointer;
+}
+/*****Icones de Ferramentas e Tecnologias****/
 p{
     text-align: justify;
     padding: 2px;
