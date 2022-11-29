@@ -239,6 +239,10 @@ strong{
     justify-content: center;
     margin-bottom: 25px;
 }
+.icones{
+    display: flex;
+    flex-wrap: wrap;
+}
 .img_icone{
     width: 60px;
     height: 60px;
