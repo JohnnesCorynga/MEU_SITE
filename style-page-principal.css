@@ -54,6 +54,16 @@
         transform: translateX(0);
     }
 }
+@keyframes appear-left-return {
+    0%{
+        transform: translateX(0);
+    }60%{
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
 .eragonTech{
     font-size: 25px;
     display: flexbox;
@@ -65,9 +75,7 @@
 body{
     background-color: var(--cor2);
     color:  #222;
-    
     text-align: center;
-    margin: auto;
 }
 .p-inicial{
     color: var(--cor4);
@@ -90,6 +98,7 @@ header{
     padding: 25px;
     background-image: linear-gradient(to top,var(--cor2), var(--cor0));
 }
+
 .esquerda{
     padding-top: 50px; ;
     float: left;
@@ -126,26 +135,24 @@ header{
     text-decoration: underline;/*coloca o sublinhado no link*/
 }
 article{
-    max-width: 950px;
     padding: 10px;
     /*box-shadow: 2px 1px 5px rgba(30, 29, 29, 0.535);*/
     border-radius: 15px;
-    text-align: left;
     margin: auto;
 }
-article>section{
+article>section{ 
+    margin: auto;
+    max-width: 950px;
+    text-align: left;
     margin-top: 100px;
     margin-bottom: 50px;
 }
 main{
+    width: 100%;
     font-size: 1.5em;
     padding: 20px 10px;
-    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.494); */
-    margin: auto;
     margin-top: 150px;
-    max-width: 1200px;
     color: var(--cor4);
-    background-color: var(--cor2);
     border-bottom-right-radius:  15px;
     border-bottom-left-radius:  15px;
 }
@@ -218,7 +225,6 @@ strong{
 }
 .secao-centro{
     display:block;
-    margin:auto;
     margin-top: 50px;
     justify-content: center;
     text-align: center;

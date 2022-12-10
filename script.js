@@ -12,9 +12,13 @@
 function ativaNoScrool(){
     document.querySelectorAll('#hiddenScroll').forEach((hiddenScroll, index) => {
     if(hiddenScroll.getBoundingClientRect().top < 450){
-            hiddenScroll.style.opacity= 1;
-            hiddenScroll.style.animation=" appear-left 1.4s";
-    };
+        hiddenScroll.style.opacity= 1;
+        hiddenScroll.style.animation=" appear-left 1.7s";
+
+    }else if(hiddenScroll.getBoundingClientRect().top > 450){
+        hiddenScroll.style.opacity= 0;
+        hiddenScroll.style.animation=" appear-left-return 1.4s";
+    }
 })
 }
 window.addEventListener('scroll', ativaNoScrool) //ativando a função na página
