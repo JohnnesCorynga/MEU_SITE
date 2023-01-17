@@ -229,6 +229,9 @@ strong{
     justify-content: center;
     text-align: center;
 }
+.secao-centro>h2{
+    display: flex;
+}
 .secao-centro>article{
     max-width: 800px;
     font-size: 1em;
