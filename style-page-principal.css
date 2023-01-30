@@ -241,6 +241,10 @@ strong{
     color: azure;
     padding: 20px;
 }
+.section-pri{
+    background-color: rgb(44, 52, 44);
+    width: 100%;
+}
 /*Icones de Ferramentas e Tecnologias*/
 .secao-centro>div{
     display: flex;
